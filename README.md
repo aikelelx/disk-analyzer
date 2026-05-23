@@ -1,54 +1,27 @@
-Disk Analyzer
+Программа для анализа дискового пространства в Linux.
 
-Инструмент для анализа дискового пространства в Linux.
-Возможности
+## Описание
 
-    Анализ размера папок и файлов
+Инструмент помогает находить большие файлы, дубликаты, старые файлы и пустые папки. Полезен для очистки диска.
 
-    Поиск дубликатов по содержимому
+## Функциональность
 
-    Поиск файлов старше N дней
+- Анализ размера папок и файлов
+- Поиск дубликатов по содержимому
+- Поиск файлов старше N дней
+- Поиск пустых папок
+- Статистика по типам файлов
+- Топ самых больших файлов
 
-    Поиск пустых папок
+## Требования
 
-    Статистика по типам файлов
+- Linux
+- Python 3.6+
 
-    Поиск самых больших файлов
+## Установка
 
-Установка
-
+```bash
 git clone https://github.com/aikelelx/disk-analyzer.git
 cd disk-analyzer
 chmod +x scripts/install.sh
 ./scripts/install.sh
-Использование
-
-diskanalyzer анализ текущей папки
-diskanalyzer /путь/к/папке анализ указанной папки
-diskanalyzer --duplicates поиск дубликатов
-diskanalyzer --old 30 поиск файлов старше 30 дней
-diskanalyzer --empty поиск пустых папок
-diskanalyzer --types статистика по типам файлов
-diskanalyzer --large поиск самых больших файлов
-diskanalyzer --help справка
-Примеры
-
-diskanalyzer ~/Загрузки
-diskanalyzer --duplicates ~
-diskanalyzer --old 60 /var/log
-diskanalyzer --large /
-Требования
-
-    Python 3.6+
-
-    Операционная система Linux
-
-Лицензия
-
-MIT
-Автор
-
-GitHub: aikelelx
-Репозиторий
-
-https://github.com/aikelelx/disk-analyzer
