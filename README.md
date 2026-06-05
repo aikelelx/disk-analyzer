@@ -8,7 +8,6 @@
 
 - Анализ размера папок и файлов
 - Поиск дубликатов по содержимому
-- Поиск файлов старше N дней
 - Поиск пустых папок
 - Статистика по типам файлов
 - Топ самых больших файлов
@@ -20,7 +19,7 @@
 
 ## Установка
 
-```bash
+
 git clone https://github.com/aikelelx/disk-analyzer.git
 cd disk-analyzer
 chmod +x scripts/install.sh
